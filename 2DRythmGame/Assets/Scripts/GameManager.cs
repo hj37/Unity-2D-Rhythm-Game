@@ -13,6 +13,15 @@ public class GameManager : MonoBehaviour
 
     public float noteSpeed;
     // Start is called before the first frame update
+    /*
+     * BAD : 1
+     * GOOD : 2
+     * PERFECT : 3
+     * MISS : 4
+     */
+
+    public enum judges { NONE = 0, BAD, GOOD, PERFECT, MISS};//판정값 초기에는 0, BAD라는 문자는 1 
+
     void Start()
     {
         
